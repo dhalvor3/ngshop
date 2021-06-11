@@ -8,15 +8,10 @@ import { Dog } from './dog';
 })
 
 export class DogsService implements OnInit {
-  // private dogData: Dog[] = DOGS;
   private dogData = DOGS;
 
   constructor() { }
 
-//ian added
-//  allDogs(): string[] {
-//    return ['Fido','Rover','Rex'];
-  
 all(): Observable<Dog[]> {
   return of (this.dogData);
 }

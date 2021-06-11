@@ -1,3 +1,6 @@
 <h2>{{ title }}</h2>
 
-<dog *ngFor="let dog of dogs" [id]='dog.id'[dog]='dog'></dog>
+<button class='btn btn-primary ' (click)="create()"> Favorites </button>
+<button class='btn btn-primary' (click)="create()"> All </button>
+
+<dog *ngFor="let dog of dogs" [id]='dog.id' [dog]='dog'></dog>
